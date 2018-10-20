@@ -13,6 +13,7 @@ class CreateProject extends Component {
     handeleSubmit = (e) => {
         e.preventDefault();
         this.props.createProject(this.state);
+        this.props.history.push('/');
     }
 
     handeleChange = (e) => {
